@@ -1,0 +1,17 @@
+{
+    "name": "andrey_dev/blog",
+    "type": "project",
+    "require": {
+        "league/plates": "^4.0@dev",
+        "phroute/phroute": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "Core\\": "core",
+            "Frontend\\Controllers\\": "src/frontend/controllers"
+        },
+        "files": ["core/rb-mysql.php"]
+    },
+    "license": "MIT",
+    "minimum-stability": "dev"
+}

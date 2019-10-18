@@ -1,0 +1,9 @@
+<?php
+$v->layout('layout', ['title' => 'Категории']);
+
+foreach( $categories as $category):
+?>
+    <ul class="sidebar__menu">
+        <li class="sidebar__menu-item"><a href="<?= $category['slug'];?>"><?=$category['name'];?></a></li>
+    </ul>
+<?php endforeach; ?>
